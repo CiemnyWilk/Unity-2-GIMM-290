@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Unity 1 GIMM 290.sln"
+    "dotnet.defaultSolution": "Unity-2-GIMM-290.sln"
 }
