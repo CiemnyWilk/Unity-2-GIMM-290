@@ -21,7 +21,8 @@ public class WanderingAI : MonoBehaviour
         {
             transform.Translate(0, 0, speed * Time.deltaTime);
             Ray ray = new Ray(transform.position, transform.forward);
-            Debug.DrawRay();
+            Vector3 forward=transform.TransformDirection(Vector3.forward) * 10;
+            Debug.DrawRay(transform.position, forward, Color.green);
             RaycastHit hit;
             if (Physics.SphereCast(ray, 0.75f, out hit))
             {
